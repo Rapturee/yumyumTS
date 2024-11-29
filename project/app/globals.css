@@ -1,0 +1,49 @@
+@tailwind components;
+@tailwind utilities;
+
+.dots::after {
+  content: "";
+  display: block;
+  color: white;
+  width: 100%;
+  border-top: 1px dotted currentColor;
+  transform: translateY(-50%);
+}
+
+.dots-cart::after {
+  content: "";
+  display: block;
+  color: black;
+  width: 100%;
+  border-top: 1px dotted currentColor;
+  transform: translateY(-50%);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Bakgrundsbild för postern */
+.background-poster {
+  background-image: url('/poster.jpg'); /* Söker postern i public-mappen */
+  background-size: cover; /* Gör bilden responsiv och täcker hela området */
+  background-position: center; /* Centrerar bilden */
+  background-repeat: no-repeat; /* Ingen upprepning av bilden */
+  height: 100vh; /* Full höjd */
+  width: 100%; /* Full bredd */
+}
